@@ -1,0 +1,41 @@
+﻿@page
+@model phoneBook.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+<body class="body">
+    <div class="sec">
+        <div class="container cont">
+            <center>
+                <div class="middle">
+                    <div id="login">
+                        <form action="javascript:void(0);" method="get">
+                            <fieldset class="clearfix">
+                                <p><span class="fa fa-user"><span class="material-icons">person</span></span><input type="text" Placeholder="Username" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+                                <p><span class="fa fa-lock"><span class="material-icons">vpn_key</span></span><input type="password" Placeholder="Password" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+                                <div>
+                                    <span style="width:48%; text-align:left; display: inline-block;">
+                                        <a class="small-text" href="#">
+                                            Esqueceu sua
+                                            Senha?
+                                        </a>
+                                    </span>
+                                    <span style="width:50%; text-align:right;  display: inline-block;"><input type="submit" value="Sign In"></span>
+                                </div>
+                            </fieldset>
+                            <div class="clearfix"></div>
+                        </form>
+                        <div class="clearfix"></div>
+                    </div> <!-- end login -->
+                    <div class="logo">
+                        <img src="~/images/Logo.jpeg" width="100px" heigth="100px" />
+                        <h3>PhoneBook</h3>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+   
+</body>
+
