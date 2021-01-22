@@ -22,8 +22,6 @@ namespace phoneBook.Pages
 
         }
 
-        public void Redirect(){
-            RedirectToPage("Login");
-        }
+        
     }
 }

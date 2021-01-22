@@ -24,6 +24,15 @@ namespace phoneBook
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.AccessDeniedPath = new Microsoft.AspNetCore.Http.PathString("/phoneBook/Error");
+                options.Cookie.Name = "Cookie";
+                options.Cookie.HttpOnly = true;
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(720);
+                options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/phoneBook/Login");
+                options.SlidingExpiration = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
