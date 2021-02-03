@@ -11,8 +11,10 @@
                     <div id="login">
                         <form action="javascript:void(0);" method="get">
                             <fieldset class="clearfix">
-                                <p><span class="fa fa-user"><span class="material-icons">person</span></span><input type="text" Placeholder="Username" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
-                                <p><span class="fa fa-lock"><span class="material-icons">vpn_key</span></span><input type="password" Placeholder="Password" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+                                <p><span class="fa fa-user"><span class="material-icons">person</span></span><input type="text" Placeholder="Username" id="username"><span id="err"></span></p>
+                                <!-- JS because of IE support; better: placeholder="Username" -->
+                                
+                                <p><span class="fa fa-lock"><span class="material-icons">vpn_key</span></span><input type="password" Placeholder="Password" id="pwd"><span id="errpwd"></span></p> <!-- JS because of IE support; better: placeholder="Password" -->
                                 <div>
                                     <span style="width:48%; text-align:left; display: inline-block;">
                                         <a class="small-text" href="#">
@@ -20,7 +22,7 @@
                                             Senha?
                                         </a>
                                     </span>
-                                    <span style="width:50%; text-align:right;  display: inline-block;"><input type="submit" value="Sign In"></span>
+                                    <span style="width:50%; text-align:right;  display: inline-block;"><input type="submit" value="Sign In" id="btn" onclick="InputVerify()"></span>
                                 </div>
                             </fieldset>
                             <div class="clearfix  d-none d-md-block d-lg-block d-xl-block"></div>
