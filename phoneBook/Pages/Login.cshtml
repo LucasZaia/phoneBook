@@ -3,41 +3,28 @@
 @{
     ViewData["Title"] = "Login";
 }
-<body class="body">
-    <div class="sec">
-        <div class="container cont">
-            <center>
-                <div class="middle">
-                    <div id="login">
-                        <form action="javascript:void(0);" method="get">
-                            <fieldset class="clearfix">
-                                <p><span class="fa fa-user"><span class="material-icons">person</span></span><input type="text" Placeholder="Username" id="username"><span id="err"></span></p>
-                                <!-- JS because of IE support; better: placeholder="Username" -->
-                                
-                                <p><span class="fa fa-lock"><span class="material-icons">vpn_key</span></span><input type="password" Placeholder="Password" id="pwd"><span id="errpwd"></span></p> <!-- JS because of IE support; better: placeholder="Password" -->
-                                <div>
-                                    <span style="width:48%; text-align:left; display: inline-block;">
-                                        <a class="small-text" href="#">
-                                            Esqueceu sua
-                                            Senha?
-                                        </a>
-                                    </span>
-                                    <span style="width:50%; text-align:right;  display: inline-block;"><input type="submit" value="Sign In" id="btn" onclick="InputVerify()"></span>
-                                </div>
-                            </fieldset>
-                            <div class="clearfix  d-none d-md-block d-lg-block d-xl-block"></div>
+    <div class="header-space"></div>
+    <div class="section-ptb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto">
+                    <div class="sign-form">
+                        <form class="form-group mb-0" action="#">
+                            <input class="form-control mb-25" type="text" name="yourname" placeholder="User Name">
+                            <input class="form-control" type="password" name="password" placeholder="Password">
+                            <div class="custom-control custom-checkbox mr-sm-2 d-flex mt-30 mb-20">
+                                <input type="checkbox" class="custom-control-input" id="remember">
+                                <label class="custom-control-label ml-2" for="remember">Remember Me</label>
+                                <span class="ml-auto"><a href="#">Forgot Password</a></span>
+                            </div>
+                            <button class="btn btn-primary w-100 mb-40" type="submit">Log In</button>
+                            <p class="text-center mb-0">Don't have an account? <a href="register.html">Register Now</a></p>
                         </form>
-                        <div class="clearfix"></div>
-                    </div> <!-- end login -->
-                    <div class="logo">
-                        <img src="~/images/Logo.png"/>
-                        <h3>PhoneBook</h3>
-                        <div class="clearfix"></div>
                     </div>
                 </div>
-            </center>
+            </div>
         </div>
     </div>
-   
-</body>
+
+
 
